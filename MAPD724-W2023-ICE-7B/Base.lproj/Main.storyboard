@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MAPD724_W2023_ICE_7B" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This is a label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5r-5l-VfW">
+                                <rect key="frame" x="61" y="182" width="270" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rTb-tx-LdD">
+                                <rect key="frame" x="61" y="297" width="271" height="236"/>
+                                <color key="backgroundColor" red="1" green="0.65332427039999996" blue="0.0068086348429999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09J-Or-QRs">
+                                <rect key="frame" x="41" y="231" width="313" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="g5r-5l-VfW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="4uX-5k-ivl"/>
+                            <constraint firstItem="09J-Or-QRs" firstAttribute="top" secondItem="g5r-5l-VfW" secondAttribute="bottom" constant="28" id="7fh-4J-LIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="09J-Or-QRs" secondAttribute="trailing" constant="39" id="ALQ-bj-mUY"/>
+                            <constraint firstItem="g5r-5l-VfW" firstAttribute="leading" secondItem="rTb-tx-LdD" secondAttribute="leading" id="GS2-dX-1FL"/>
+                            <constraint firstItem="09J-Or-QRs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="QFW-2K-DyL"/>
+                            <constraint firstItem="g5r-5l-VfW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLk-g0-dtG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rTb-tx-LdD" secondAttribute="bottom" constant="285" id="gFt-Hi-CJE"/>
+                            <constraint firstItem="g5r-5l-VfW" firstAttribute="centerX" secondItem="rTb-tx-LdD" secondAttribute="centerX" id="gVO-CB-tMT"/>
+                            <constraint firstItem="g5r-5l-VfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="61" id="osV-Ys-RfL"/>
+                            <constraint firstItem="rTb-tx-LdD" firstAttribute="top" secondItem="09J-Or-QRs" secondAttribute="bottom" constant="32" id="ouR-LB-ZsT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rTb-tx-LdD" id="dq2-km-Tj5"/>
+                        <outlet property="myLabel" destination="g5r-5l-VfW" id="OXX-wz-OiF"/>
+                        <outlet property="textField" destination="09J-Or-QRs" id="Ne2-sC-L2F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
