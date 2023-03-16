@@ -18,15 +18,12 @@ class ViewController: UIViewController {
     private var textPosition: CGFloat!
     private var imagePosition: CGFloat!
     
-    private var isRotated: Bool!
-    
     private var labelTransform: CGAffineTransform!
     private var textTransform: CGAffineTransform!
     private var imageTransform: CGAffineTransform!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        isRotated = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -80,7 +77,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func animation4_pressed(_ sender: UIButton) {
-        isRotated = true
         let rotateMe = GLKMathDegreesToRadians(45)
           
           UIView.animate(withDuration: 3.4, delay: 2.3,
@@ -125,14 +121,6 @@ class ViewController: UIViewController {
         self.myLabel.transform = labelTransform
         self.textField.transform = textTransform
         self.imageView.transform = imageTransform
-        
-        /*if (isRotated){
-            let rotateMe = GLKMathDegreesToRadians(45)
-            self.myLabel.transform = CGAffineTransform(rotationAngle: CGFloat(-rotateMe))
-            self.textField.transform = CGAffineTransform(rotationAngle: CGFloat(rotateMe))
-            self.imageView.transform = CGAffineTransform(rotationAngle: CGFloat(-rotateMe))
-            isRotated = false
-        }*/
     }
 }
 
